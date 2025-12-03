@@ -2,7 +2,7 @@ name: Compile and Publish Latest PDF
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 permissions:
   contents: write
