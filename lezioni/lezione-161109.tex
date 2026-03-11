@@ -27,20 +27,20 @@ Contiamo il numero di poli con molteplicità a destra e a sinistra. A destra ho 
 Riprendiamo l'equazione 
 $$\wp'(z)^2 = (\wp(z) - c)^2(a\wp(z)+b) $$
 E sia $z_0$ uno zero di $\wp-c$. Contiamo gli ordini a destra e a sinistra, indicando con $m:=\ord_{z_0}(\wp-c) > 0$. 
-A sinistra ho $\ord_{z_0}( \wp'^2) = 2\ord_{z_0}( \wp') = 2(m-1)$. A destra ho $\ord_{z_0}(RHS) = 2m + \ord_{z_0}(a\wp+b) >= 2m$, perchè $a \wp(z_0)+b = ac+b \neq \infty$. Ma $2m> 2(m-1)$, assurdo.
+A sinistra ho $\ord_{z_0}( \wp'^2) = 2\ord_{z_0}( \wp') = 2(m-1)$. A destra ho $\ord_{z_0}(RHS) = 2m + \ord_{z_0}(a\wp+b) \ge 2m$, perchè $a \wp(z_0)+b = ac+b \neq \infty$. Ma $2m> 2(m-1)$, assurdo.
 \end{proof}
 
 \begin{proof}[Dimostrazione 3]
 Dimostriamo che se $L=\omega_1\bbZ + \omega_2 \bbZ$, gli zeri di $A$ sono $ \wp(\omega_1/2), \wp(\omega_2/2), \wp((\omega_1+\omega_2)/2)$. Questi sono distinti: 
 \begin{itemize}
-\item Dato $z_0 \in \bbC$ diverso da 0, la funzione $\wp(z) - \wp(z_0)$ ha un polo doppio in 0. Visto che il numero di zeri e poli è uguale, avrà due zeri. Per parità di $\wp$, essi sono $\pm z_0$. 
+\item Dato $z_0 \in \bbC$ diverso da $0$, la funzione $\wp(z) - \wp(z_0)$ ha un polo doppio in $0$. Visto che il numero di zeri e poli è uguale, avrà due zeri. Per parità di $\wp$, essi sono $\pm z_0$. 
 \item I complessi $\omega_1/2, \omega_2/2, (\omega_1+\omega_2)/2$ sono a due a due non opposti.
 \end{itemize} 
 Dunque ci basta dimostrare che questi sono effettivamente zeri di $A$ (che ne avrà tre, essendo di grado 3). La funzione $\wp'$ è dispari e periodica di periodo $L$, perciò per ogni $x$ tale che $2x \in L$ si ha
 $\wp'(x) = \wp'(x-2x) = \wp'(-x) = -\wp'(x)$
 da cui $\wp'(x) = 0$. I numeri $x=\omega_1/2, \omega_2/2, (\omega_1+\omega_2)/2$ sono effettivamente tali che $2x \in L$, perciò zeri di $\wp'$. Per tali $x$ ottengo
 $$ 0 = \wp'(x)^2 = A(\wp(x))$$
-che $\wp(x)$ è uno zero di $A$, as desired.
+che $\wp(x)$ è uno zero di $A$, come desiderato.
 \end{proof}
 
 \begin{proposizione}
