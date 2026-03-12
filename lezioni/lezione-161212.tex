@@ -52,20 +52,25 @@ $$
 \bbC[x] \leftrightarrow \bbZ\, \ \ , \ \ \ \bbC\left[x,\sqrt{ax^3+bx+c}\right] \leftrightarrow \bbZ\left[\sqrt{\alpha}\right].
 $$ 
 \section{logaritmo ellittico}
-Lo scopo di questa chiacchera è dare una idea di come si possa {\it invertire} la funzione $\wp: \bbC/L \rar \widetilde{E}$, o meglio costruirne delle determinazioni.\\
-L'analogia con le quadriche $x^2+y^2=1$ e la funzione $\sin$ è forte: stiamo cercando l'equivalente del logaritmo complesso.\\
+Lo scopo di questa chiacchera è dare una idea di come si possa {\it invertire} la funzione $\wp: \bbC/L \rar \widetilde{E}$, o meglio costruirne delle determinazioni.
+
+L'analogia con le quadriche $x^2+y^2=1$ e la funzione $\sin$ è forte: stiamo cercando l'equivalente del logaritmo complesso.
+
 Accettiamo il fatto che si possa dare una nozione di forma differenziale sulla cubica (che in fondo è una onesta varietà). Allora definiamo una forma differenziale $\omega$ su $\widetilde{E}$ dandone l'espressione in coordinate locali $(x,y)$:
 $$
 \omega=\frac{dx}{y(x)}=\frac{dx}{\pm\sqrt{ax^3+bx+c}}
 $$
-questa forma è definita su $\bbC\setminus\{\alpha, \beta, \gamma\}$ le tre radici della cubica ma ha un problema di scelta della determinazione della radice; perchè sia ben definita occorre operare dei {\it tagli} $\gamma_1$ e $\gamma_2$ che collegano le radici $\alpha,\beta$ e $\gamma,\infty$. Se rimuoviamo questi cammmini dal nostro piano una scelta del segno nella forma $\omega$ è coerente ovunque e si può felicemente integrare. Inolre aver tolto l'$\infty$ ci permette di passare dal piano complesso alla sfera di Riemann.\\
+questa forma è definita su $\bbC\setminus\{\alpha, \beta, \gamma\}$ le tre radici della cubica ma ha un problema di scelta della determinazione della radice; perchè sia ben definita occorre operare dei {\it tagli} $\gamma_1$ e $\gamma_2$ che collegano le radici $\alpha,\beta$ e $\gamma,\infty$. Se rimuoviamo questi cammmini dal nostro piano una scelta del segno nella forma $\omega$ è coerente ovunque e si può felicemente integrare. Inoltre aver tolto l'$\infty$ ci permette di passare dal piano complesso alla sfera di Riemann.
+
 Alla fine abbiamo due forme $\omega_+$ ed $\omega_-$ definite su $\widehat{\bbC}\setminus\{\gamma_1,\gamma_2\}$. Adesso avviene il passaggio critico: dobbiamo incollare queste due sfere tramite l'identificazione rispettiva dei cammini che abbiamo rimosso:
 $$
 \gamma_1^+\sim \gamma_1^-\ \ , \ \ \gamma_2^+\sim\gamma_2^-;
 $$
-quest'incollamente a priori è topologico ma può essere fatto in modo da mantenere la struttura complessa, e questo è non ovvio. però dato che topologicamente il risultato è un toro la struttura complessa su di lui, per il teorema di classificazione di Riemann, deve essere quella standard.\\
-Questo toro che abbiamo trovato è naturalmente quello corrispondente alla nostra cubica, anche se neanche questo sembra ovvio.\\
-Le nostre forme differenziali nell'incollamento non si perdono, anzi si uniscono coerentemente dando luogo quindi ad una unica $\Omega$ definita sul toro.\\
+quest'incollamente a priori è topologico ma può essere fatto in modo da mantenere la struttura complessa, e questo è non ovvio. però dato che topologicamente il risultato è un toro la struttura complessa su di lui, per il teorema di classificazione di Riemann, deve essere quella standard.
+
+Questo toro che abbiamo trovato è naturalmente quello corrispondente alla nostra cubica, anche se neanche questo sembra ovvio.
+
+Le nostre forme differenziali nell'incollamento non si perdono, anzi si uniscono coerentemente dando luogo quindi ad una unica $\Omega$ definita sul toro.
 Questa forma agisce naturalmente, tramite integrazione, sui cammini sul toro, o meglio sulle loro classi di equivalenza omotopica, o meglio sull'abelianizzato del gruppo fondamentale:
 $$
 \int_{c_1 * c_2} \Omega=\int_{c_2 * c_1} \Omega
