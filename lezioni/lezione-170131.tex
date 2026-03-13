@@ -16,13 +16,13 @@ $\Gamma' = \langle S, T \rangle$.
 \item[P1] se $z,gz \in \bar{F}$ con $g \neq \Id$, allora $z \in \partial F$.
   Più precisamente si hanno i tre casi (anche se non disgiunti):
   \begin{enumerate}
-  \item[C1] $\Re z = \pm \frac{1}{2}$ e $z' = z \mp 1$
-  \item[C2] $|z| = 1$ e $z' = - \frac{1}{z}$
-  \item[C3] $z = z' = \rho$ oppure $z = z' = \rho + 1$
+  \item[C1] $\Re z = \pm \frac{1}{2}$ e $z' = z \mp 1$;
+  \item[C2] $|z| = 1$ e $z' = - \frac{1}{z}$;
+  \item[C3] $z = z' = \rho$ oppure $z = z' = \rho + 1$.
   \end{enumerate}
 \item[P2] se $z \in F$ e $z=gz$,
   allora $z=i$ (nel qual caso $g \in \left\langle S \right\rangle$) oppure si ha che
-  $z= \rho$ (nel qual caso $g \in \left\langle ST \right\rangle$)
+  $z= \rho$ (nel qual caso $g \in \left\langle ST \right\rangle$).
 \end{itemize}
 \end{teorema}
 
@@ -91,26 +91,25 @@ quindi $|c| \leq 1$.
 \bigskip
 \squared{P2} Utilizzando il punto P1 distinguiamo i tre casi:
 \begin{itemize}
-\item Il caso C1 non si realizza perché avevamo $z' \neq z$
-\item Il caso C2 ci da $z^2 = -1 \implies z = i$ e, per quanto visto sopra, si ha $g = S$
-\item Il caso C3 ci da solo $z = z' = \rho$ perché $\rho + 1 \notin F$ e si ottiene $g = \left(\begin{array}{cc} -1 & -1 \\ 1 & 0 \\ \end{array} \right) = (ST)^2$, quindi (visto che $(ST)^3 = \Id$) lo stabilizzatore è il sottogruppo $\langle ST \rangle$
+\item Il caso C1 non si realizza perché avevamo $z' \neq z$;
+\item Il caso C2 ci da $z^2 = -1 \implies z = i$ e, per quanto visto sopra, si ha $g = S$;
+\item Il caso C3 ci da solo $z = z' = \rho$ perché $\rho + 1 \notin F$ e si ottiene $g = \left(\begin{array}{cc} -1 & -1 \\ 1 & 0 \\ \end{array} \right) = (ST)^2$, quindi (visto che $(ST)^3 = \Id$) lo stabilizzatore è il sottogruppo $\langle ST \rangle$.
 \end{itemize}
 \end{proof}
 
 \begin{corollario}
 $F$ è un dominio fondamentale.
 
-$Stab(i)=\left\langle S \right\rangle$, 
-$Stab(\rho)=\left\langle ST \right\rangle$ e $Stab(z)=\emptyset$ se 
+$\Stab(i)=\left\langle S \right\rangle$, 
+$\Stab(\rho)=\left\langle ST \right\rangle$ e $\Stab(z)=\emptyset$ se 
 $z \notin \{i, \rho \}$.
 \end{corollario}
 
 \begin{teorema}
 $\Gamma$ è generato da $S$ e $T$.
 \end{teorema}
-
 \notamargine{In realtà si potrebbe dimostrare anche che $\Gamma$ è il gruppo libero
-generato da $S$ e $T$ modulo le relazioni $S^2 = Id$ e $(T S)^3=Id$}
+generato da $S$ e $T$ modulo le relazioni $S^2 = Id$ e $(T S)^3=Id$.}
 
 \begin{proof}
 Vediamo ora che $\Gamma'=\Gamma$:
@@ -150,20 +149,17 @@ Gauss.
 
 \section{Funzioni Modulari}
 \begin{definizione}
-Una funzione $f$ meromorfa su $\cH$ di dice debolmente modulare di peso $2k$ (per $k \in \mathbb{N}$), se $\forall
+Una funzione $f$ meromorfa su $\cH$ di dice debolmente modulare di peso $2k$ (per $k \in \mathbb{N}$), se $\forall g =
 \left( \begin{array}{cc} a & b \\ c & d \end{array} \right) \in
 \SL_2 \left( \bbZ \right)$ si ha:
 	\[
-		f\left( \frac{az+b}{cz+d} \right) = (cz+d)^{2k} f(z)
+		f(g z) = (c z + d)^{2 k} f(z)
 		\qquad \forall z \in \bbC
 	\]
 \end{definizione}
 
 \begin{osservazione}
-$\displaystyle{gz=\frac{az+b}{cz+d} \stackrel{\det = 1}{\Rightarrow}
-\frac{d(gz)}{dz}=\frac{1}{(cz+d)^2}}$. Quindi la condizione della definizione di
-funzione debolmente modulare può essere scritta come $f(gz)(d(gz))^k=f(z)(dz)^k$.
-Sono k-forme differenziali (secondo noi però sono tensori $(0, k)$ simmetrici).
+	La definizione non è completamente a caso. Infatti, da $a d - bc = 1$ segue $\displaystyle{\frac{d(gz)}{dz} = \frac{1}{(cz+d)^2}}$. Quindi, posto $\omega(z) = f(z)(\de z)^k$ un \emph{differenziale di peso $k$} la condizione di debole modularità si scrive come $\omega(g z) = \omega(z)$. Queste $k$-forme differenziali (secondo noi però sono tensori $(0, k)$ simmetrici).
 \end{osservazione}
 
 \begin{osservazione}
@@ -182,12 +178,12 @@ $\displaystyle{f(z)=\widetilde{f}(q)=\sum^{+\infty}_{n=-\infty}{a_n q^n}}$.
 \begin{definizione}
 Nelle notazioni di sopra, se $\widetilde{f}$ è meromorfa anche in $D$, cioè
 se gli $a_n$ con indice $n<0$ non nulli sono in numero finito, la $f$
-è "meromorfa all'$\infty$" e si dice {\bf funzione modulare}.
+è ``meromorfa all'$\infty$'' e si dice {\bf funzione modulare}.
 
-Se poi $\widetilde{f}$ è olomorfa su tutto $D$ ($0$ compreso), cioè se tutti gli $a_n$ con $n<0$
-sono nulli, la $f$ è "olomorfa all'$\infty$" e si dice {\bf forma modulare}.
+Se poi $\widetilde{f}$ si estende a tutto $D$, $0$ compreso, cioè se tutti gli $a_n$ con $n < 0$
+sono nulli, la $f$ è ``olomorfa all'$\infty$'' e si dice {\bf forma modulare}.
 
-Infine, se anche $a_0=0$, cioè $f(\infty)=0$, $f$ si dice forma modulare
+Infine, se anche $a_0 = 0$, cioè $f(\infty) = 0$, $f$ si dice forma modulare
 cuspidale
 \end{definizione}
 
