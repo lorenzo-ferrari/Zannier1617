@@ -7,7 +7,7 @@ professor Umberto Zannier nell'anno 2016/2017.
 
 # Come ottenere il pdf
 
-Potete trovare il pdf compilato qui: [pdf compilato](https://github.com/lorenzo-ferrari/Zannier1617/releases/latest/download/FunzioniEllitticheEModulari.pdf)
+Potete trovare il pdf compilato qui: [pdf compilato](https://github.com/lorenzo-ferrari/Zannier1617/releases/latest/download/FunzioniEllitticheEModulari.pdf).
 
 # Come Contribuire
 
@@ -15,7 +15,7 @@ Accettiamo contributi da chiunque. Contate che potete contribuire sia
 trascrivendo le lezioni, sia segnalando gli errori che vi trovate. Oltre che
 ovviamente utilizzando i nostri pdf, per farci sentire importanti.
 
-Per informazioni più precise [guardate qui](docs/COMECONTRIBUIRE.md)
+Per informazioni più precise [guardate qui](docs/COMECONTRIBUIRE.md).
 
 Attenzione: il branch `riscrittura` è ora da considerarsi morto. In data 15 Marzo 2026 è avvenuto un merge manuale in `master`.
 
