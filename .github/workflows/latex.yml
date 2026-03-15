@@ -17,7 +17,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: lezioni.tex
+          root_file: FunzioniEllitticheEModulari.tex
 
       # Optional: Keep artifact for debugging history
       - name: Upload PDF as artifact
