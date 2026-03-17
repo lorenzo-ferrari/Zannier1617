@@ -395,27 +395,29 @@ Possiamo quindi riscrivere le tre leggi di gruppo su superfici di Riemann come:
 
 
     \begin{proposizione}
-        Il duale è un funtore controvariante, più prosaicamente $\hat{c_2 \circ c_1} = \hat c_1 \circ \hat c_2$
+        Il duale è un funtore controvariante, più prosaicamente $\hat{c_2 \circ c_1} = \hat c_1 \circ \hat c_2$.
     \end{proposizione}
     \begin{proof}
-        È una rapida verifica: scriviamo $T_1\xrightarrow{c_1}T_2\xrightarrow{c_2}T_3$ e sia $z\in T_3$. Prendiamo $y\in T_2$ tale che $c_2(y)=z$ e $x\in T_1$ tale che $c_1(x)=y$.\\
-         Per definizione di duale, $\hat c_1(y)=\deg c_1\cdot x$ e $\hat c_2(z)=\deg c_2\cdot y$.\\
+        È una rapida verifica: scriviamo $T_1\xrightarrow{c_1}T_2\xrightarrow{c_2}T_3$ e sia $z\in T_3$. Prendiamo $y\in T_2$ tale che $c_2(y)=z$ e $x\in T_1$ tale che $c_1(x)=y$.
+         Per definizione di duale, $\hat c_1(y)=\deg c_1\cdot x$ e $\hat c_2(z)=\deg c_2\cdot y$.
         Ma allora $(\hat c_1\circ\hat c_2)(z)=\hat c_1(\deg c_2 y)=\deg c_1\cdot\deg c_2 \cdot x$ che è esattamente $\hat{c_2\circ c_1}(z)$ poiché $c_2\circ c_1(x)=z$ e $\deg(c_2\circ c_1)=\deg c_1\cdot\deg c_2$.
     \end{proof}
 
 
 \section{Endomorfismi di un Toro}
-    \newthought{In questa sezione} vogliamo studiare l'anello delle isogenie di un toro in sè. Ma prima classifichiamo un po' meglio le isogenie tra tori.
+    \newthought{In questa sezione} vogliamo studiare l'anello delle isogenie di un toro in sé. Ma prima classifichiamo un po' meglio le isogenie tra tori.
 
     \begin{proposizione}
-    Siano $T_{1}$ e $T_{2}$ due tori.\\
+    Siano $T_{1}$ e $T_{2}$ due tori. Allora
     $\exists f:T_{1} \rar T_{2}$ isogenia $\sse$ $\exists \Gamma < T_{1}$ sottogruppo finito t.c. $\sfrac{T_{1}}{\Gamma} \simeq T_{2}$ come gruppi olomorfi.
     \end{proposizione}
     \begin{proof}
       \fbox{$\Rar$} È il primo teorema di omomorfismo (ci sarebbe da mostrare che gli isomorfismi sono olomorfi ma ci crediamo).
 
       \fbox{$\Leftarrow$} Sia $\pi:\bbC \rar T_{1} = \sfrac{\bbC}{L}$ la proiezione al quoziente. Allora $\overline{L}=\pi^{-1}(\Gamma)$ è un sottogruppo discreto di $\bbC$ (rimane discreto perche $\Gamma$ è finito). Per teoremi di omomorfismo (di nuovo sarebbe da mostrare l'olomorfia):
-    $$\sfrac{T_{1}}{\Gamma} \simeq \sfrac{\sfrac{\bbC}{L}}{\Gamma} \simeq \sfrac{\bbC}{\overline{L}}$$
+		\[
+			\sfrac{T_{1}}{\Gamma} \simeq \sfrac{\sfrac{\bbC}{L}}{\Gamma} \simeq \sfrac{\bbC}{\overline{L}}.
+		\]
     Di conseguenza $\sfrac{T_{1}}{\Gamma}$ è un toro $T_{2}$ e la proiezione al quoziente è isogenia tra $T_{1}$ e $T_{2}$.
     \end{proof}
 
@@ -423,14 +425,14 @@ Possiamo quindi riscrivere le tre leggi di gruppo su superfici di Riemann come:
 
 \subsection{Anello degli Endomorfismi di un Toro}
 
-    Fissiamo un toro $T=\sfrac{\bbC}{L}$ e consideriamo l'insieme $End(T)$ delle isogenie del toro in sè, con in più la mappa nulla.
+    Fissiamo un toro $T=\sfrac{\bbC}{L}$ e consideriamo l'insieme $\End(T)$ delle isogenie del toro in sè, con in più la mappa nulla.
 
-    \begin{proposizione} $End(T)$ ha una naturale struttura di anello (somma tra mappe e prodotto di composizione). Inoltre vale che:
+    \begin{proposizione} $\End(T)$ ha una naturale struttura di anello (somma tra mappe e prodotto di composizione). Inoltre vale che:
     \begin{enumerate}
-    \item $End(T)$ è un anello commutativo
-    \item $\bbZ \subseteq End(T)$
-    \item $End(T) \hookrightarrow \bbC$
-    \item $End(T) \otimes_{\bbZ} \bbQ$ è un campo ({\it d'ora in poi, se non diversamente specificato, tutti i tensori saranno su $\bbZ$})
+    \item $\End(T)$ è un anello commutativo;
+    \item $\bbZ \subseteq \End(T)$;
+    \item $\End(T) \hookrightarrow \bbC$;
+    \item $\End(T) \otimes_{\bbZ} \bbQ$ è un campo ({\it d'ora in poi, se non diversamente specificato, tutti i tensori saranno su $\bbZ$}).
     \end{enumerate}
     \end{proposizione}
 
@@ -441,15 +443,15 @@ Possiamo quindi riscrivere le tre leggi di gruppo su superfici di Riemann come:
 
     1. ovvia dalla 3. (perché l'immersione è di anelli)
 
-    2. Poichè $L$ è uno $\bbZ$-modulo, $\forall n \in \bbZ, nL\subseteq L$. Inoltre, sia $x\in \bbC \setminus L$. Allora $x/n \not\in L$ e si ha che $n[x/n]=[x]$ $\Rar$ la moltipicazione per n è surgettiva sul toro $\Rar$ $\bbZ \subseteq End(T)$
+    2. Poichè $L$ è uno $\bbZ$-modulo, $\forall n \in \bbZ, nL\subseteq L$. Inoltre, sia $x\in \bbC \setminus L$. Allora $x/n \not\in L$ e si ha che $n[x/n]=[x]$ $\Rar$ la moltipicazione per n è surgettiva sul toro $\Rar$ $\bbZ \subseteq \End(T)$
 
     4. Sia $t=\sum\limits_{i=0}^{k} \mu_{i} \otimes \frac{p_{i}}{q_{i}}$. Sia $q$ il minimo comune multiplo dei $q_{i}$ e siano $a_{i} \in \bbZ$ tali che $\forall i, q=q_{i}a_{i}$. Allora,\\
-    $t=\sum\limits_{i=0}^{k} \mu_{i}\otimes \frac{p_{i}}{q_{i}} = \sum\limits_{i=0}^{k} \mu_{i} \otimes \frac{p_{i}a_{i}}{q}= \sum\limits_{i=0}^{k} a_{i}p_{i}\mu_{i}\otimes \frac{1}{q} = (\sum\limits_{i=0}^{k} a_{i}p_{i}\mu_{i})\otimes \frac{1}{q}$ $\Rar$ ogni tensore è semplice. L'inverso di un tensore $\mu \otimes \frac{p}{q}$ (dove $\mu$ è una mappa non nulla di grado $d$) è il tensore $\hat{\mu} \otimes \frac{q}{pd}$, con $\hat{\mu}$ l'endomorfismo duale di $\mu$ (la moltiplicazione è quella indotta sull'anello tensore dai due anelli $End(T)$ e $\bbQ$. Sui tensori semplici diventa semplicemente la moltiplicazione ``componente per componente'').
+    $t=\sum\limits_{i=0}^{k} \mu_{i}\otimes \frac{p_{i}}{q_{i}} = \sum\limits_{i=0}^{k} \mu_{i} \otimes \frac{p_{i}a_{i}}{q}= \sum\limits_{i=0}^{k} a_{i}p_{i}\mu_{i}\otimes \frac{1}{q} = (\sum\limits_{i=0}^{k} a_{i}p_{i}\mu_{i})\otimes \frac{1}{q}$ $\Rar$ ogni tensore è semplice. L'inverso di un tensore $\mu \otimes \frac{p}{q}$ (dove $\mu$ è una mappa non nulla di grado $d$) è il tensore $\hat{\mu} \otimes \frac{q}{pd}$, con $\hat{\mu}$ l'endomorfismo duale di $\mu$ (la moltiplicazione è quella indotta sull'anello tensore dai due anelli $\End(T)$ e $\bbQ$. Sui tensori semplici diventa semplicemente la moltiplicazione ``componente per componente'').
     \end{proof}
 
-    Volendo, potremmo fare gli stessi discorsi (anello degli endomorfismi etc...) sulle curve ellittiche (che sono definite anche su altri campi). Cosa cambia? In $char \ K >0$ {\bf non } è detto che $End(T)$ sia commutativo (con $T$ curva ellittica).
+    Volendo, potremmo fare gli stessi discorsi (anello degli endomorfismi etc...) sulle curve ellittiche (che sono definite anche su altri campi). Cosa cambia? In $char \ K >0$ {\bf non } è detto che $\End(T)$ sia commutativo (con $T$ curva ellittica).
 
-    \noindent Cerchiamo ora di caratterizzare un po' meglio $F=End(T) \otimes \bbQ$. Sia $T=\tau \bbZ + \bbZ$ e $\mu : T \rar T$ l'isogenia indotta dalla moltiplicazione per $\mu$. La condizione di mappare il reticolo in sé si traduce nel sistema:
+    \noindent Cerchiamo ora di caratterizzare un po' meglio $F=\End(T) \otimes \bbQ$. Sia $T=\tau \bbZ + \bbZ$ e $\mu : T \rar T$ l'isogenia indotta dalla moltiplicazione per $\mu$. La condizione di mappare il reticolo in sé si traduce nel sistema:
     \begin{equation*}
     \begin{cases}
     	\mu \tau = a\tau + b\\
@@ -465,10 +467,10 @@ Possiamo quindi riscrivere le tre leggi di gruppo su superfici di Riemann come:
     Altrimenti $\mu$ è quadratico immaginario perchè è autovalore della matrice $M$, ma non razionale.
     Quando posso avere i due casi?\\
     Si deve avere $\tau = \frac{a\tau + b}{c\tau + d}$ $\Rar$ $c\tau^{2} + (d-a)\tau - b=0$\\
-    $\tau$ non è immaginario quadratico $\Rar$ $End(T)=\bbZ$.
-    $\tau$ è immaginario quadratico $\Rar$ $\bbZ \subsetneq End(T)$. Questo fenomeno si chiama {\bf moltiplicazione complessa dei tori}.
+    $\tau$ non è immaginario quadratico $\Rar$ $\End(T)=\bbZ$.
+    $\tau$ è immaginario quadratico $\Rar$ $\bbZ \subsetneq \End(T)$. Questo fenomeno si chiama {\bf moltiplicazione complessa dei tori}.
 
     Ricordiamo che, data un'isogenia $c$, rappresentata dalla moltiplicazione per $\mu$, e detto $\hat\mu$ il rappresentante dell'isogenia duale, vale la relazione: $\mu \hat\mu = \deg c$. Nel caso particolare in cui un'isogenia sia invertibile, $\deg c = 1$, e necessariamente $\hat\mu = \bar\mu$
 
     \noindent {\bf $\underline{\mbox{Esercizio:}}$} $c_{i}: T_{1} \rar T_{2}$ ($i=1 , 2$) isogenie, $c_{1}+c_{2} \neq 0$ $\Rar$ $\hat{c_{1} + c_{2}}=\hat{c_{1}}+\hat{c_{2}}$.\\
-    {\bf $\underline{\mbox{Hint:}}$} Basta dimostrarlo nel caso degli endomorfismi, ponendo $\hat{c_{2}}\circ c_{1} \in End(T_{1})$
+    {\bf $\underline{\mbox{Hint:}}$} Basta dimostrarlo nel caso degli endomorfismi, ponendo $\hat{c_{2}}\circ c_{1} \in \End(T_{1})$

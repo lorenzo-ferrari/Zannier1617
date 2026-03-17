@@ -10,7 +10,7 @@ Prendiamo un toro $T=\quotient{\bbC}{L}$ con $L$ reticolo fissato, e sia $E: y^2
   Con $\ol{E}(\bbK)$ si intendono i punti $\bbK$-razionali di $\ol{E}$, ovvero i punti di $\bbP^2 \bbC$ (facenti parte di $\ol{E}$) per le quali il rapporto tra le coordinate è un numero di $\bbK$, ovvero $\ol{E}(\bbK) = \{ (x : y : z) \in \ol{E} \mid \frac{x}{y}, \frac{y}{z} \in \bbK \}$
 \end{notazione}
 
-\section{Struttura di \sdR di una curva ellittica}
+\section{Struttura di \sdR{} di una curva ellittica}
 
 Per quanto visto nella prima parte, possiamo cercare un rivestimento $p: E(\bbC)\to\bbC$. In realtà quello che si riesce a fare è rivestire $D=\bbC\setminus\{z : A(z)=0\}$.
 
@@ -23,7 +23,7 @@ Abbiamo dunque trovato un rivestimento $\pi: E(\bbC)\setminus\{y=0\}\to D$.
 Per i punti in cui $y_0=0$, ovvero $x_0$ è radice del polinomio $A(x)$, possiamo fare un ragionamento analogo e invertire localmente: basta considerare la proiezione sull'altra componente, ovvero $\varphi(x,y)=y$. Infatti dato che $A(x_0)=0$ possiamo scrivere $A(x)=(x-x_0)A_1(x)$ con $A_1(x)$ non nullo in un intorno (dato che $A$ non ha radici multiple) e dunque ricavare $x-x_0=\frac{y^2}{A_1(x)}$ che è olomorfa.
 
 \begin{proposizione}
-    L'insieme dei punti della curva ellittica $\ol{E}(\bbC)$ è connesso
+    L'insieme dei punti della curva ellittica $\ol{E}(\bbC)$ è connesso.
 \end{proposizione}
 \begin{proof}
     Consideriamo intanto $E(\bbC)$ (lo spazio dei punti affini).
@@ -66,18 +66,18 @@ Notiamo che stiamo trattando $T$ come una varietà olomorfa e ciò che stiamo fa
 
 
 \begin{proposizione}
-  $F$ è una bigezione tra $T$ ed $\ol{E}(\bbC)$ (ed è olomorfa)
+  $F$ è una bigezione tra $T$ ed $\ol{E}(\bbC)$ (ed è olomorfa).
 \end{proposizione}
 \notamargine{Ricordiamo che tutte le funzioni meromorfe su $T$ sono
   $\bbC(\wp(z), \wp'(z))$, mentre le fuznioni meromorfe pari su $T$ sono
-  esattamente $\bbC(\wp(z))$}
+  esattamente $\bbC(\wp(z))$.}
 \begin{proof}
   Sia $p \in \ol{E}(\bbC)$. Distinguiamo in due casi:
   \begin{itemize}
   \item Se $p = (0 : 1 : 0)$ ok per costruzione (significa che la $\wp$
-    ha un polo e quindi come unico punto abbiamo $z = 0 \in T$)
+    ha un polo e quindi come unico punto abbiamo $z = 0 \in T$);
   \item Se $p \in E(\bbC)$ (nella parte affine della cubica) sia $p =
-    (x_0, y_0)$
+    (x_0, y_0)$.
 
     Consideriamo allora $\wp(z) - x_0$ che è una funzione ellittica pari
     non costante che ha due zeri (con molteplicità). Se $z_0$ è uno zero
@@ -87,7 +87,7 @@ Notiamo che stiamo trattando $T$ come una varietà olomorfa e ciò che stiamo fa
     \item Se $\wp'(z_0) = 0$ allora $z_0$ è uno zero doppio e deve
       quindi coincidere con $-z_0$ sul toro, ovvero nel piano ho
       solamente quattro possibilità: sono la metà dei generatori del
-      parallelogramma fondamentale del toro.
+      parallelogramma fondamentale del toro;
 
       \notamargine{Nella figura qui sotto è disegnato il
         parallelogramma fondamentale di un toro. Sono evidenziati con
@@ -97,7 +97,7 @@ Notiamo che stiamo trattando $T$ come una varietà olomorfa e ciò che stiamo fa
         \includegraphics[width=3cm]{lezione-161128-fig1}}
 
       Allora si ha un solo punto tale che $4x_0^3 - g_2 x_0 - g_3 = 0 (=
-      \wp'(z_0))$ e quindi anche questo caso è ok
+      \wp'(z_0))$ e quindi anche questo caso è ok;
     \item Se $\wp'(z_0) \neq 0$ allora si ha $z_0 \neq - z_0$ in $T$ e
       quindi $\wp'(z_0) = - \wp'(-z_0)$ poiché la $\wp'$ è
       dispari. Siamo allora nel caso $4x_0^3 - g_2 x_0 - g_3 = \alpha
@@ -108,14 +108,14 @@ Notiamo che stiamo trattando $T$ come una varietà olomorfa e ciò che stiamo fa
 
   Per quanto riguarda l'olomorfia, basta aggiungere che la mappa fornita
   $z \mapsto (\wp(z) : \wp'(z) : 1)$ è ovviamente olomorfa tra $T$ e
-  $\bbP^2 \bbC$
+  $\bbP^2 \bbC$.
 \end{proof}
 
 \begin{osservazione}
   Notiamo però che se mi viene dato un polinomio di terzo grado nella
   forma $y^2 = 4x^3 - g_2 x - g_3$ non so ancora dire se venga da un
   toro oppure no. Se viene da un toro allora ho la corrispondenza
-  biunivoca (proposizione precedente) $\sfrac{\bbC}{L} \leftrightarrow T$
+  biunivoca (proposizione precedente) $\sfrac{\bbC}{L} \leftrightarrow T$.
 \end{osservazione}
 
 \begin{osservazione}

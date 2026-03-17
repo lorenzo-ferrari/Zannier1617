@@ -86,16 +86,22 @@ Vediamo ora un'altra importante proprietà delle funzioni ellittiche, in partico
 
 Fissiamo un toro $T$ e rappresentiamolo come $\bbC/L$ ($L$ reticolo fissato).
 \begin{definizione}
-    La funzione $\wp$ di Weierstrass è definita dalla serie $$\wp_L(z):=\frac{1}{z^2}+\sum_{\omega\in L\ \omega\not=0}(\frac{1}{(z-\omega)^2}-\frac{1}{\omega^2})$$
-    Inoltre la \emph{serie di Eisenstein di peso $k$} è data dalla serie $$G_k(L)=\sum_{\omega\in L\ \omega\not=0}\omega^{-2k}$$
+    La funzione $\wp$ di Weierstrass è definita dalla serie
+	\[
+		\wp_L(z):=\frac{1}{z^2}+\sum_{\omega\in L\ \omega\not=0}\left(\frac{1}{(z-\omega)^2}-\frac{1}{\omega^2} \right).
+	\]
+    Inoltre la \emph{serie di Eisenstein di peso $k$} è data dalla serie
+	\[
+		G_k(L)=\sum_{\omega\in L\ \omega\not=0}\omega^{-2k}.
+	\]
 \end{definizione}
 
 Ci occupiamo ora delle questioni di convergenze delle serie nel seguente
 \begin{teorema}
     Sia $L$ un reticolo fissato. Allora valgono
     \begin{enumerate}
-        \item La serie di Eisenstein $G_k(L)$ è assolutamente convergente per $k>1$
-        \item La serie che definisce la funzione $\wp_L(z)$ converge assolutamente e uniformemente sui compatti di $\bbC\setminus L$. La serie definisce quindi una funzione meromorfa su $\bbC$ avente solo poli di ordine $2$ e residuo nullo nei punti del reticolo.
+        \item La serie di Eisenstein $G_k(L)$ è assolutamente convergente per $k>1$;
+        \item La serie che definisce la funzione $\wp_L(z)$ converge assolutamente e uniformemente sui compatti di $\bbC\setminus L$. La serie definisce quindi una funzione meromorfa su $\bbC$ avente solo poli di ordine $2$ e residuo nullo nei punti del reticolo;
         \item La funzione $\wp_L(z)$ è una funzione ellittica pari.
     \end{enumerate}
 \end{teorema}
@@ -184,7 +190,7 @@ Quindi $f\in\bbC(\wp)$, come voluto.
 \end{proof}
 
 \begin{teorema}
-    Il campo delle funzioni ellittiche è isomorfo a $\bbC(\wp_L(z),\wp'_L(z))$
+    Il campo delle funzioni ellittiche è isomorfo a $\bbC(\wp_L(z),\wp'_L(z))$.
 \end{teorema}
 \begin{proof}
     Fissiamo una funzione meromorfa dispari $h:T\rar\bbC$ non costante (ad esempio $\wp'$).
@@ -195,7 +201,7 @@ Quindi $f\in\bbC(\wp)$, come voluto.
 \end{proof}
 
 \begin{corollario}
-    Le funzioni ellittiche con poli solo in $L$ sono polinomi in $\wp_L$ e $\wp'_L$
+    Le funzioni ellittiche con poli solo in $L$ sono polinomi in $\wp_L$ e $\wp'_L$.
 \end{corollario}
 
 
@@ -206,14 +212,16 @@ $(\wp')^2=\frac{A(\wp)}{B(\wp)}$; cerhiamo ora di capire come sono fati $A$ e $B
 
 \begin{itemize}
  \item Contiamo i poli in 0. A sinistra ho un polo sestuplo, mentre a destra l'ordine del polo è dato da $2\cdot (\deg A - \deg B)$. Quindi $\deg A = \deg B + 3$.
- \item Contiamo ora gli zeri. A sinistra ho 6 zeri, a destra il numero di zeri è dato da $2*\deg A$: infatti il numeratore contribuisci con zeri in posti diversi da 0 e con poli in zero; il denominatore contribuisce con zeri in 0 (che però vengono mangiati dai poli del denominatore) e con poli altrove. Quindi $\deg A = 3$ e $\deg B=0$
+ \item Contiamo ora gli zeri. A sinistra ho 6 zeri, a destra il numero di zeri è dato da $2 \deg A$: infatti il numeratore contribuisci con zeri in posti diversi da 0 e con poli in zero; il denominatore contribuisce con zeri in 0 (che però vengono mangiati dai poli del denominatore) e con poli altrove. Quindi $\deg A = 3$ e $\deg B = 0$.
 \end{itemize}
 
 In conclusione otteniamo la seguente relazione tra la funzione di Weierstrass e la sua derivata:
 
-$$\wp_L'(z)^2 = A_L(\wp_L(z)) $$
+\[
+	\wp_L'(z)^2 = A_L(\wp_L(z)),
+\]
 
-Dove $A_L$ è un polinomio cubico. Cerchiamo di capire le caratteristiche di $A_L$; in particolare
+dove $A_L$ è un polinomio cubico. Cerchiamo di capire le caratteristiche di $A_L$; in particolare
 \begin{itemize}
 \item Proveremo che $A_L$ non ha radici multiple;
 \item Determineremo i coefficienti di $A_L$ in termini del reticolo $L$.
@@ -312,7 +320,7 @@ che $\wp(x)$ è uno zero di $A$, come desiderato.
     \end{eqnarray*}
 
     Ma allora se prendiamo la funzione $$ f(z)= \wp'(z)^2 -4\wp(z)^3+60G_2\wp(z)+140G_3 $$
-    questa è olomorfa (nell'espansione in serie compaiono solo potenze positive di $z$) e inoltre $f(0)=0$.\\
+    questa è olomorfa (nell'espansione in serie compaiono solo potenze positive di $z$) e inoltre $f(0)=0$.
     D'altra parte $f$ è una funzione ellittica; ma una funzione ellittica olomorfa è costante, e dunque $f(z)\equiv 0$, ovvero abbiamo trovato la relazione algebrica che cercavamo.
 
 \end{proof}
