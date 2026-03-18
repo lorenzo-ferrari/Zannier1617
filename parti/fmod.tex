@@ -264,10 +264,12 @@ previsti dal corollario, ne deduciamo che $\sigma g = Id$ e quindi $\Gamma = \Ga
 
 \begin{osservazione}
   Al quoziente $\cH/\Gamma \simeq F$ si può dare una struttura di superficie di Riemann
-  (che non è quella data dall'immersione per via dei due stabilizzatori non banali),
+  (che, nei punti critici, non è quella data dall'immersione per via dei due stabilizzatori non banali),
   identificando le rette $\Re(z)=\pm \frac{1}{2}$ e i due archi di circonferenza
   (quelli passanti per $i$) sul bordo di $F$. Il quoziente è omeomorfo a $\bbC$.
   Possiamo quindi indurre una struttura di superficie di Riemann con l'omemomorfismo trovato.
+  % ma possiamo fare ben meglio di cosi: le carte sono esplicite
+  % TODO: scrivere e giustificare bene che la carta locale per un intorno di z è sum_{g in Stab(z)}{gz}.
 \end{osservazione}
 
 \section{Forme quadratiche binarie intere}
@@ -471,9 +473,9 @@ non si annulla mai in $\cH$.
 		\item Per $k = 1$ si ha $M_1=\{0\}$. Infatti non è possibile scrivere $\frac{1}{6}$ come combinazione lineare intera positiva di $1, \frac{1}{3}, \frac{1}{2}$;
 		
 		\item Per $k = 2$ si ha $M_2=\bbC G_2$. Infatti le forme non nulle in $M_2$ si annullano solo in $\rho$ con ordine 1,
-		e $G_2$ soddisfa questa proprietà. Se $f\in M_2$, sia $x\neq\rho$. Allora considero $f-\frac{f(x)}{G_2(x)}G_2$. Questa funzione si annulla in $x$ e in $\rho$, ed è quindi $0$, dunque $f=\frac{f(x)}{G_2(x)}G_2$
+		e $G_2$ soddisfa questa proprietà. Se $f\in M_2$, sia $x\neq\rho$. Allora considero $f-\frac{f(x)}{G_2(x)}G_2$. Questa funzione si annulla in $x$ e in $\rho$, ed è quindi $0$, dunque $f=\frac{f(x)}{G_2(x)}G_2$;
 		
-		\item Per $k = 3, 4, 5$, allo stesso modo, si ha $M_3=\bbC G_3, M_4=\bbC G_2^2, M_5= \bbC G_2G_3$
+		\item Per $k = 3, 4, 5$, allo stesso modo, si ha $M_3=\bbC G_3, M_4=\bbC G_2^2, M_5= \bbC G_2G_3$;
 		
 		\item Per $k = 6$, si ha $M_6 = \bbC G_2^3 + \bbC G_3^2$. Vale infatti $G_2^3, G_3^2 \in M_6$, inoltre con combinazioni lineari di queste, possiamo trasformare una funzione $f \in M_6$ in un'altra $g$ con uno zero in $\rho$ o in $i$, dopodiché si applica lo stesso ragionamento dei punti precedenti.
 		Le forme $G_2^3$ e $G_3^2$ sono linearmente indipendenti, per esempio perché si annullano in punti diversi, dunque sono una base di $M_6$.
